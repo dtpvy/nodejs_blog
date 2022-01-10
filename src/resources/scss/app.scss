@@ -1,0 +1,13 @@
+@import "variables";
+
+h1 {
+  color: black;
+}
+
+h2 {
+  color: $red-color;
+}
+
+h3 {
+  color: blue;
+}
