@@ -5,7 +5,7 @@ class MeController {
   // GET /stored/courses
   storedCourses(req, res, next) {
     Promise.all([
-      Course.find({}).sortabe(req),
+      Course.find({}).sortable(req),
       Course.countDocumentsDeleted({}),
     ])
       .then(([courses, deleteCount]) => {
